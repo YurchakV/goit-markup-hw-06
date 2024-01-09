@@ -47,9 +47,6 @@ img {
   padding-right: 16px;
   margin-left: auto;
   margin-right: auto;
-
-  outline: 2px solid rgb(0, 255, 34);
-  outline-offset: -2px;
 }
 
 @media screen and (min-width: 768px) {
