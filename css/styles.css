@@ -753,9 +753,29 @@ img {
   display: flex;
 }
 
-.footer-container {
-  display: flex;
-  align-items: baseline;
+@media only screen and (max-width: 767.98px) {
+  .footer-container {
+    display: block;
+    text-align: center;
+    max-width: 320px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 108px;
+  }
+}
+
+@media only screen and (min-width: 1158px) {
+  .footer-container {
+    display: flex;
+    align-items: baseline;
+    flex-wrap: nowrap;
+    padding-left: 0;
+  }
 }
 
 .footer-logo {
@@ -782,22 +802,74 @@ img {
   text-transform: uppercase;
 }
 
-.footer-title {
-  color: #f4f4fd;
-  font-family: Roboto;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 1.5;
-  letter-spacing: 0.32px;
-  width: 264px;
+@media only screen and (max-width: 767.98px) {
+  .footer-title {
+    width: 288px;
+    text-align: left;
+    padding-bottom: 72px;
+    color: #f4f4fd;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0.32px;
+  }
 }
 
-.footer-presc {
-  margin-right: 120px;
+@media only screen and (min-width: 768px) {
+  .footer-title {
+    color: #f4f4fd;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0.32px;
+    width: 264px;
+  }
+}
+
+@media only screen and (min-width: 1158px) {
+  .footer-title {
+    color: #f4f4fd;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0.32px;
+    width: 264px;
+  }
+}
+
+@media only screen and (max-width: 767.98px) {
+  .footer-presc {
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .footer-presc {
+    padding-bottom: 72px;
+  }
+}
+
+@media only screen and (min-width: 1158px) {
+  .footer-presc {
+    margin-right: 120px;
+  }
 }
 
 .footer-socials {
+}
+
+@media only screen and (min-width: 768px) {
+  .footer-socials {
+    padding-left: 24px;
+  }
+}
+
+@media only screen and (min-width: 1158px) {
+  .footer-socials {
+    padding-left: 0;
+  }
 }
 
 .footer-media {
@@ -814,6 +886,22 @@ img {
   justify-content: center;
   align-items: center;
   gap: 16px;
+}
+
+@media only screen and (max-width: 767.98px) {
+  .socials-footer {
+    padding-bottom: 72px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .socials-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    padding-bottom: 0;
+  }
 }
 
 .social-item-footer {
@@ -842,10 +930,24 @@ img {
   fill: currentColor;
 }
 
-.footer-subscribe {
-  margin-right: auto;
-  margin-left: 80px;
+@media only screen and (max-width: 767.98px) {
+  .footer-subscribe {
+    margin: 0;
+  }
 }
+
+@media only screen and (min-width: 768px) {
+  .footer-subscribe {
+  }
+}
+
+@media only screen and (min-width: 1158px) {
+  .footer-subscribe {
+    margin-right: auto;
+    margin-left: 80px;
+  }
+}
+
 .subscribe-title {
   color: #fff;
   font-size: 16px;
@@ -859,6 +961,24 @@ img {
   gap: 24px;
   align-items: center;
 }
+
+@media only screen and (max-width: 767.98px) {
+  .subscribe-form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .subscribe-form {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+    flex-wrap: nowrap;
+  }
+}
+
 .subscribe-label {
 }
 .subscribe-input {
@@ -884,7 +1004,6 @@ img {
   align-items: center;
   justify-content: center;
   padding: 8px 24px;
-
   min-width: 165px;
   height: 40px;
   background-color: #4d5ae5;
@@ -896,6 +1015,7 @@ img {
   line-height: 1.5;
   letter-spacing: 0.04em;
 }
+
 .subscribe-icon {
   fill: #ffffff;
   margin-left: 16px;
@@ -927,7 +1047,7 @@ img {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
-  width: 408px;
+  width: 288px;
   min-height: 584px;
   border-radius: 4px;
   background-color: #fcfcfc;
@@ -936,6 +1056,12 @@ img {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
     0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+@media only screen and (min-width: 768px) {
+  .modal {
+    width: 408px;
+  }
 }
 
 .modal-button {
